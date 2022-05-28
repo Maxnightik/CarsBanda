@@ -6,7 +6,7 @@ body {
 }
 /* настройки внешнего вида страницы и положения элементов */
 body {
-  background-image: url(img/backgroundstart.jpg);
+  background-image: url(../img/backgroundstart.jpg);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,12 +25,38 @@ body {
   background: url(/1556547969.png);
   position: relative;
   width: 900px;
-  height: 800px;
+  height: 950px;
   margin: auto;
   background-size: 100%;
 }
+
+.line1 {
+  background: url(../img/yellow_line_long.png);
+  position: absolute;
+  width: 7px;
+  height: 62px;
+  background-size: 100%;
+  margin: auto;
+  z-index: 1;
+  top: 0%;
+  left: 46%;
+}
+
+.line2 {
+  background: url(../img/yellow_line_short.png);
+  position: absolute;
+  width: 7px;
+  height: 33px;
+  background-size: 100%;
+  margin: auto;
+  z-index: 999999;
+  top: 15%;
+  left: 46%;
+  z-index: 0;
+}
+
 #car {
-  background: url(img/cars/car2.png);
+  background: url(../img/cars/car2.png);
   position: absolute;
   width: 80px;
   height: 160px;
@@ -39,6 +65,19 @@ body {
   z-index: 999999;
   top: 75%;
   left: 42%;
+}
+
+#enemycar {
+  background: url(../img/cars/car8.png);
+  transform: rotate(180deg);
+  position: absolute;
+  width: 80px;
+  height: 160px;
+  background-size: 100%;
+  margin: auto;
+  z-index: 999999;
+  top: 25%;
+  left: 59%;
 }
 
 #start {
@@ -78,7 +117,7 @@ body {
 #main {
   width: 100%;
   height: 100%;
-  background-image: url(img/background.png);
+  background-image: url(../img/background_done.png);
   display: none;
   position: absolute;
 }
